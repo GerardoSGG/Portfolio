@@ -5,6 +5,8 @@ it generates a text document with a code which is the translation of my language
 
 In the Grammar of my language file is the syntax of my language with which you can write programs and translate them to the 8086 assembly language.
 
+In the src folder you can see the code and the following files
+
 In the text_read document there is a program written in my language that what it does is show the Fibonacci series up to the number indicated.
 
 The code translated into assembly language 8086 is displayed in the generated code file.
