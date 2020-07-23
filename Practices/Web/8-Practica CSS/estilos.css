@@ -1,0 +1,39 @@
+h1 {
+    background-color: DodgerBlue;
+    color:red;
+    font-family: large;
+    text-decoration: overline; 
+}
+p {
+	color: gray;
+	font-family: Verdana;
+	font-size: medium;
+}
+
+#parte1 {
+	color:red;
+	text-align: center;
+	font-family: Verdana;
+	font-size: 24px;
+}
+
+#parte2 {
+	color: blue;
+	text-align: center;
+	font-family: Verdana;
+	font-size: 30px;
+}
+
+a:link {
+	color: red; 
+}
+a:visited{
+	color:green;
+}
+a:hover{
+	color: hotpink;
+}
+a:active{
+	color:purple;
+
+}

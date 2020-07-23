@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Datos</title>
+	
+</head>
+<body>
+	<div class="container center">
+	<h2 class="blue-text">Ingresa los datos requeridos</h2>
+	<form name="formulario" method="post" action="procesa.php">
+		Nombre: <input type="text" name="nombre" >
+		<br><br>
+		Apellido Paterno: <input type="text" name="ap_pat" >
+		<br><br>
+		Apellido Materno: <input type="text" name="ap_mat" >
+		<br><br>
+		Fecha de nacimiento: <input type="date" name="fecha">
+		<br><br>
+		Correo Eletronico: <input type="email" name="email" autofocus  placeholder="Ejemplo: example@domain.com" size="30">
+		<br><br>
+
+		<fieldset>
+				<legend>Estado Civil</legend>
+				<pre>
+<input type="radio" name="EstadoCivil" value="Soltero/a">Soltero/a  
+<input type="radio" name="EstadoCivil" value="Comprometido/a">Comprometido/a  
+ <input type="radio" name="EstadoCivil" value="En relacion">En relacion  
+  <input type="radio" name="EstadoCivil" value="Casado/a">Casado/a  
+   <input type="radio" name="EstadoCivil" value="Union libre">Union libre  
+   <input type="radio" name="EstadoCivil" value="Separado/a">Separado/a   
+   <input type="radio" name="EstadoCivil" value="Divorciado/a">Divorciado/a   
+   <input type="radio" name="EstadoCivil" value="Viudo/a">Viudo/a
+</pre>
+			</fieldset>
+			<br><br>
+		<fieldset>
+				<legend>Deporte Favorito</legend>
+				<pre>      
+<label><input type="checkbox" name="Deporte" value="Futbol" /><span>Baseball</span></label>  
+<label><input type="checkbox" name="Deporte" value="Basquetbol" /><span>Basquetbol</span></label>  
+ <label><input type="checkbox" name="Deporte" value="Futbol" /><span>Futbol</span></label>   
+ <input type="checkbox" name="Deporte" value="Hockey">Hockey   
+ <input type="checkbox" name="Deporte" value="E-Games">Ballet  
+ <input type="checkbox" name="Deporte" value="Boxeo">Boxeo   
+</pre>
+		</fieldset>
+		<br><br>
+		<input type="submit" name="submit!">
+		<input type="reset" >
+	</form>
+	</div>
+	
+</body>
+</html>

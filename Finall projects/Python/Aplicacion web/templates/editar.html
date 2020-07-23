@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Agenda</title>
+
+      <!--Import bootstrap-->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+
+<body class="p-3 mb-2 bg-dark text-white">
+	<div class="container center" align="center" >
+	<h1 class="text-primary" >Registrar nuevo contacto </h1>
+	<h2 class="text-primary">Ingresar datos requeridos </h2>
+	<br>
+
+	<form action="/refresca/{{datos_re.0}}"method="POST" >
+		<h5 class="text-info">Nombre del contacto</h5>
+        <input type="text" name="nombre" placeholder="Nombre Completo" pattern="^[a-z A-Z]+" required value="{{datos_re.1}}">
+		<br><br>
+
+		<h5 class="text-info">Numero de Telefono fijo</h5>
+        <input type="text" name="telefono" pattern="[0-9]{10}" required  value="{{datos_re.2}}">
+		<br><br>
+
+		<h5 class="text-info">Correo Eletronico:</h5> 
+        <input type="email" name="email" autofocus  placeholder="Ejemplo: ejemplo@dominio.com" size="30" required value="{{datos_re.3}}">
+		<br><br>
+
+		<h5 class="text-info">Fecha de nacimiento</h5> 
+        <input type="date" name="fecha" required  value="{{datos_re.4}}">
+		<br><br>
+        
+		<button type="submit" class="btn btn-primary">Guardar</button>
+		<br><br>
+	</form>
+	</div>
+</body>
+</html>

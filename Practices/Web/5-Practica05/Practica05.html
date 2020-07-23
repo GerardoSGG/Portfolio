@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Practica 05 (Formularios)</title>
+</head>
+<body>
+	<!--
+	<h3>Formulario Requerido</h3>
+	<form>
+		<p>Nombre: <input type="text" name="name_control" autofocus required>
+			<br> <br>
+			Correo Eletronico: <input type="email" name="email_control" autofocus required placeholder="Ejemplo: example@domain.com" size="30">
+			<br><br>
+			Contraseña: <input type="password" name="password_control" required>
+			<br><br>
+			URL: <input type="url" name="url_control" placeholder="Escribe la URL de tu pagina web personal" size="40">
+			<br><br>
+			Fecha: <input type="date" name="date_control">
+			<br><br>
+			Tiempo: <input type="time" name="time_control">
+			<br><br>
+			Fecha y hora de nacimiento: <input type="datetime" name="datetime_control">
+			<br><br>
+			Mes: <input type="month" name="month_control">
+			<br><br>
+			Semana: <input type="week" name="week_control">
+			<br><br>
+			Numero (min -10, max 10): <input type="number" name="number_control" min="-10" max="10" value="0">
+			<br><br>
+			Intervalo (min 0, max 10): <input type="range" name="range_control" min="0" max="10" value="0"> <output for="range_control" name="range_control_value"> 0</output>
+			<br><br>
+			Telefono: <input type="tel" name="tel_control">
+			<br><br>
+			Color: <input type="color" name="color_control">
+			<br>
+			<fieldset>
+				<legend>Edad</legend>
+				<input type="checkbox" name="edad" value="20-39"> 20-39
+				<input type="checkbox" name="edad" value="40-59"> 40-59
+				<input type="checkbox" name="edad" value="20-39"> 60-79
+			</fieldset>
+			<br><br>
+			<fieldset>
+				<legend>Pizza Size</legend>
+				<p><label> <input type="radio" name="size">Small</label></p>
+				<p><label> <input type="radio" name="size">Medium</label></p>
+				<p><label> <input type="radio" name="size">Large</label></p>
+			</fieldset>
+			<br><br>
+			Quejas o sugerencias <br>
+			 <textarea name="message" rows="10" cols="40">Deja tu comentario</textarea> 
+			<br><br>
+			
+			<input type="submit" name="Submit!">
+			<input type="reset" name="reset_control">
+		</p>
+	</form>
+	-->
+
+	<form name="formulario" method="post" action="procesa.php">
+		Nombre: <input type="text" name="nombre" value=""> <br><br>
+		Correo: <input type="email" name="correo" placeholder="example@domain.com" required>
+		<br><br>
+		<input type="submit" name="submit!">
+		<input type="reset" >
+	</form>
+
+</body>
+</html>

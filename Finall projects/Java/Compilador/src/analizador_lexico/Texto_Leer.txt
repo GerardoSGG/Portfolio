@@ -1,0 +1,21 @@
+inicio_pro
+inicio_v
+cadena mensaje: = ¡ingrese n! ;
+ent n: = 0 ;
+ent f: = 0 ;
+ent ta: = 1 ;
+ent i: = 1 ;
+ent to: = 0 ;
+fin_v
+print ( mensaje: ) ;
+input ( n: ) ;
+print ( salto: ) ;
+n: = n: + 1
+while ( i: < n: ) inicio_while
+to: = f:
+f: = ta: + f:
+ta: = to:
+print ( ta: ) ;
+i: = i: + 1
+fin_while
+fin_pro

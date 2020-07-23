@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Modificar</title>
+	<!--Import Google Icon Font-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+</head>
+<body class="white">
+	
+	<div class="container center">
+	<h1 class="black-text center">Modificar contacto </h1>
+	<h4 class="black-text center" >Ingresar datos requeridos</h4>
+	<form name="formulario" method="post" action="modifica.php" class="col s12">
+		<h5 class="black-text">Nombre del contacto</h5> <input type="text" name="nombre" placeholder="Nombre Completo" pattern="^[a-z A-Z]+" required>
+		<br><br>
+		<h5 class="black-text">Numero de Celular</h5><input type="text" name="celular" pattern="^[0-9]{10}$">
+		<br><br>
+		<h5 class="black-text">Numero de Telefono fijo</h5><input type="text" name="fijo" pattern="[0-9]{10}" required>
+		<br><br>
+		<h5 class="black-text">Domicilio</h5> <input type="text" name="domicilio" required>
+		<br><br>
+		<h5 class="black-text">Correo Eletronico:</h5> <input type="email" name="email" autofocus  placeholder="Ejemplo: example@domain.com" size="30" required>
+		<br><br>
+		<h5 class="black-text">Fecha de nacimiento</h5> <input type="date" name="fecha" required>
+		<br><br>
+		<input class="btn waves-effect waves-black" type="submit" name="submit!" value="Modificar">
+		<input class="btn waves-effect waves-black" type="reset" >
+		<br><br>
+	</form>
+	</div>
+</body>
+</html>

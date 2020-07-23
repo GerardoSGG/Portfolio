@@ -1,0 +1,57 @@
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 300px;
+
+}
+
+th, td {
+  height: 50px;
+  padding: 5px;
+  text-align: center;    
+}
+
+th {
+	 font-style: bold;
+	 color: black;
+	 background-color: green;
+}
+h1 {
+	color: blue;
+	text-align:  center;
+}
+h2 {
+	text-align:  center;
+}
+h3 {
+	color: skyblue;
+    text-align:  center;
+}
+
+#Mate {
+color: blue;  
+ background-color:gray;
+}
+
+#Profe{
+	font-style: bold;
+	color: black;
+	background-color:lightgray; 
+}
+
+#L {
+ background-color: gray;
+}
+#MA {
+ background-color: skyblue;
+}
+#MI {
+ background-color: gray;
+}
+#JU {
+ background-color: skyblue;
+}
+#VI {
+ background-color: gray;
+}
+

@@ -1,0 +1,71 @@
+.MODEL SMALL 
+.STACK 
+.DATA
+salto db 10,13,10,13,"$"
+mensaje: DB "¡ingrese n!" , 10, 13, "$"
+n db 2,?,2 dup ("$"),10,13,"$"
+f db 2,?,2 dup ("$"),10,13,"$"
+ta db 2,?,2 dup ("$"),10,13,"$"
+i db 2,?,2 dup ("$"),10,13,"$"
+to db 2,?,2 dup ("$"),10,13,"$"
+.CODE 
+INICIO:
+MOV AX, @DATA
+MOV Ds, AX
+MOV [n+2], 30h
+MOV [f+2], 30h
+MOV [ta+2], 31h
+MOV [i+2], 31h
+MOV [to+2], 30h
+mov Dx, Offset mensaje
+mov Ah, 09h
+int 21h
+mov Dx, offset n
+mov Ah, 0Ah
+int 21h
+MOV AL,[n+2]
+MOV [n+2],AL
+mov Dx, Offset salto
+mov Ah, 09h
+int 21h
+ADD [n+2], -30H
+MOV AL,[n+2]
+MOV BL,1
+ADD AL, BL
+MOV DL, AL
+ADD DL, 30H
+MOV [n+2], DL
+iniciow13:
+MOV AH, [i+2]
+MOV AL, [n+2]
+CMP AH, AL
+JB MAYi13
+JMP FIN13
+MAYi13:
+MOV dl, [f+2]
+MOV [to+2], dl
+ADD [ta+2], -30H
+MOV AL,[ta+2]
+ADD [f+2], -30H
+MOV BL,[f+2]
+ADD AL, BL
+MOV DL, AL
+ADD DL, 30H
+MOV [f+2], DL
+MOV dl, [to+2]
+MOV [ta+2], dl
+mov Dx, offset [ta+2]
+mov Ah, 09h
+int 21h
+ADD [i+2], -30H
+MOV AL,[i+2]
+MOV BL,1
+ADD AL, BL
+MOV DL, AL
+ADD DL, 30H
+MOV [i+2], DL
+JMP iniciow13
+FIN13:
+mov Ax, 4C00h
+int 21h
+END INICIO 
