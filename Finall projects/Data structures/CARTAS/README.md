@@ -1,1 +1,1 @@
-CARD GAME REPRESENTATION OF "PILE", this game is the representation of a pile where the last element to enter the pile is the first to exit
+CARD GAME REPRESENTATION OF "STACK", this game is the representation of a stack where the last element to enter the stack is the first to exit
